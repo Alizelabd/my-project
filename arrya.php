@@ -18,3 +18,8 @@ foreach($langs as $lang => $progress) {
     echo "<li>" . $lang . "=" .  $progress . "</li>";
 }
 echo "</ul>";
+
+// multi-dimensional arrays
+
+$blogs[] = ['title' => 'castel party', 'author'=>'peach', 'likes'=> 100];
+print_r($blogs);
