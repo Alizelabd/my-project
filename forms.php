@@ -7,9 +7,25 @@ if(isset($_GET['submit'])){
 }
 */
 if(isset($_POST['submit'])){
-    echo $_POST['name'];
-    echo $_POST['email'];
-    echo $_POST['message'];
+   // echo htmlspecialchars($_POST['name']);
+  //  echo htmlspecialchars($_POST['email']);
+  //  echo htmlspecialchars($_POST['message']);
+  if(empty($_POST['name'])){
+    echo 'هذا الحقل مطلوب <br />';
+} else{
+    echo htmlspecialchars($_POST['name']);
+}
+
+  if(empty($_POST['email'])){
+    echo 'هذا الحقل مطلوب <br />';
+} else{
+    echo htmlspecialchars($_POST['email']);
+} 
+if(empty($_POST['message'])){
+    echo 'هذا الحقل مطلوب <br />';
+} else{
+    echo htmlspecialchars($_POST['message']);
+}
 }
 ?>
 <!DOCTYPE html>
