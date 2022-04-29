@@ -29,6 +29,12 @@
             $errors['message'] = 'message must be a comma separated list';
         }
     }
+
+     if(array_filter($errors)){
+
+    }else {
+        header('location: templates/index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html>
